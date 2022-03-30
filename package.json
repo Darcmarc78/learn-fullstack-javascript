@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec npx babel-node server.js --ignore public/",
-    "dev": "webpack -wd"
+    "dev": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Darcmarc78/learn-fullstack-javascript#readme",
   "dependencies": {
     "babel-node": "^0.0.1-security",
+    "ejs": "^3.1.6",
     "express": "^4.17.2",
     "mongodb": "^4.2.2",
     "prop-types": "^15.7.2",

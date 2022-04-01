@@ -2,7 +2,7 @@
   "name": "learn-fullstack-javascript",
   "version": "1.0.0",
   "description": "For an up-to-date configuration guide: [jscomplete.com/reactful](https://jscomplete.com/reactful)",
-  "main": "index.js",
+  "private":true,
   "scripts": {
     "start": "nodemon --exec npx babel-node server.js --ignore public/",
     "dev": "webpack --config webpack.config.js"
@@ -33,7 +33,7 @@
     "@babel/plugin-proposal-class-properties": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
     "@babel/preset-react": "^7.16.5",
-    "babel-eslint": "^10.1.0",
+    "@babel/eslint-parser": "^7.x",
     "babel-loader": "^8.2.3",
     "eslint": "^8.5.0",
     "eslint-plugin-react": "^7.27.1",

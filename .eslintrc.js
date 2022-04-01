@@ -1,5 +1,5 @@
 module.exports = {
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   env: {
     browser: true,
     commonjs: true,
@@ -13,12 +13,13 @@ module.exports = {
       experimentalObjectRestSpread: true,
       jsx: true
     },
-    sourceType: 'module'
+    sourceType: 'module',
+    requireConfigFile: false,
   },
   plugins: [ 'react' ],
   rules: {
     indent: ['error', 2, {SwitchCase: 1}],
-    'linebreak-style': ['error','unix'],
+    'linebreak-style': ['error','windows'],
     quotes: ['error','single'],
     semi: ['error','always'],
     'no-console': [

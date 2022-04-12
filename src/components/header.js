@@ -3,9 +3,15 @@ import propTypes from 'prop-types';
 
 const Header = ({message}) => {
   return (
-    <h2 className="text-center">
-      {message}
-    </h2>
+    <div>
+      <h2 className="text-center">
+        {message}
+      </h2>
+      <title>
+        {message}
+      </title>    
+    </div>
+    
   );
 };
 

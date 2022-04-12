@@ -2,18 +2,24 @@ import React from 'react';
 import propTypes from 'prop-types';
 import Header from './header';
 
-const App = () => {
-  return (
-    <div>
-      <Header message="Naming Contests" />
-        
+//extend React.component
+class App extends React.Component {
+  state = {
+    pageHeader: 'Naming Bontests'
+  };
+  render(){
+    return (
       <div>
-        ...
-      </div>  
-    </div>
-      
-  );
-};
+        <Header message={this.state.pageHeader} />
+                
+        <div>
+            ----
+        </div>  
+      </div>
+              
+    );
+  } 
+}
   
 App.propTypes = {
   headerMessage: propTypes.string

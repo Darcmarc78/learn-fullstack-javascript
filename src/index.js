@@ -17,6 +17,6 @@ App.propTypes = {
 };
 
 ReactDOM.render(
-  <App headerMessage="Needed to rebuild!" />,
+  <App headerMessage="Finally" />,
   document.getElementById('root')
 );

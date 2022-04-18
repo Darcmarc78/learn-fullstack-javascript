@@ -1,22 +1,17 @@
-import propTypes from 'prop-types';
 import React from 'react';
+import reactDom from 'react-dom';
 import ReactDOM from 'react-dom';
+import App from './components/app';
 
-const App = (props) => {
-  return (
-    <h2 className="text-center">
-            
-      {props.headerMessage}
-    </h2>
-
-  );
-};
-
-App.propTypes = {
-  headerMessage: propTypes.string
-};
 
 ReactDOM.render(
-  <App headerMessage="Finally" />,
+  <App />,
   document.getElementById('root')
 );
+
+setTimeout(() => {
+  reactDom.render(
+    <h2>...</h2>,
+    document.getElementById('root')
+  );
+}, 4000);

@@ -1,10 +1,9 @@
-import express from "express";
-import res from "express/lib/response";
+import express from 'express';
 
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.send({data: []});
+  res.send({data: []});
 });
 
 

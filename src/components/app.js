@@ -5,15 +5,21 @@ import Header from './header';
 //extend React.component
 class App extends React.Component {
   state = {
-    pageHeader: 'Naming Bontests'
+    pageHeader: 'Naming Contests'
   };
-  render(){
+  componentDidMount() {
+  }
+
+  componentWillUnmount() {
+  }
+
+  render() {
     return (
       <div>
         <Header message={this.state.pageHeader} />
                 
         <div>
-            ----
+            ---
         </div>  
       </div>
               

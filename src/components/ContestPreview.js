@@ -1,23 +1,14 @@
 import React from 'react';
-import Table from 'react-bootstrap/Table';
 
-const ContestPreview  = (contest) => (
-  <Table striped bordered hover>
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Category Name</th>
-        <th>Contest Name</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>{contest.id}</td>
-        <td>{contest.categoryName}</td>
-        <td>{contest.contestName}</td>
-      </tr>
-    </tbody>
-  </Table>
+const ContestPreview = (contest) => (
+  <div className="ContestPreview">
+    <div className="category-name">
+      {contest.categoryName}
+    </div>
+    <div className="contest-name">
+      {contest.contestName}
+    </div>
+  </div>
 );
 
 export default ContestPreview;

@@ -13,7 +13,8 @@ server.use(sassMiddleware({
 
 server.set('view engine', 'ejs');
 
-server.get ('/', (req, res) =>{
+
+server.get ('/', (req, res) => {
   res.render('index',{
     content: '...'
   });
@@ -22,6 +23,9 @@ server.get ('/', (req, res) =>{
 server.use('/api', apiRouter);
 server.use(express.static('public'));
 
-server.listen(config.port, () => {
+
+import './serverRender';
+
+server.listen(config.port, config.host, () => {
   console.info('Express listening on port', config.port);
 });

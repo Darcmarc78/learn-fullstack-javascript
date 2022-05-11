@@ -29,6 +29,7 @@ class App extends React.Component {
       currentContestId: contestId
     });
   };
+  // Return Content or ContestList depending on state
   currentContent() {
     if (this.state.currentContestId) {
       return <Contest {...this.state.contests[this.state.currentContestId]} />;

@@ -1,4 +1,5 @@
-import axios from "axios";
+const axios = require('axios');
+
 import config from "./config";
 
 axios.get(`${config.serverUrl}/api/contests`)

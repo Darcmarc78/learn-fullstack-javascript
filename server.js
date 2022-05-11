@@ -27,5 +27,5 @@ server.use(express.static('public'));
 import './serverRender';
 
 server.listen(config.port, config.host, () => {
-  console.info('Express listening on port', config.port);
+  console.info('Express listening on', config.host , config.port);
 });

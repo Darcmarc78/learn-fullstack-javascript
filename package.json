@@ -4,6 +4,7 @@
   "description": "For an up-to-date configuration guide: [jscomplete.com/reactful](https://jscomplete.com/reactful)",
   "private": true,
   "scripts": {
+    "both" : "npm run start & npm run dev",
     "start": "nodemon --exec npx babel-node server.js --ignore public/",
     "sass-dev": "sass --watch --update --style=expanded sass/style.scss:sass/style.css",
     "dev": "webpack -w --config webpack.config.js"

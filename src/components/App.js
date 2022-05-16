@@ -24,6 +24,7 @@ class App extends React.Component {
       `/contest/${contestId}`
     );
     
+    
     api.fetchContest(contestId).then(contest => {
       this.setState({
         pageHeader: contest.contestName,

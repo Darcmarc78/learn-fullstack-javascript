@@ -4,19 +4,19 @@
   "description": "Learning Fullstack JavaScript Development: MongoDB, Node.js, React.js",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node server.js --ignore public/",
-    "dev": "webpack -wd"
+    "start": "nodemon --exec npx babel-node server.js --ignore public/",
+    "dev": "webpack -w --config webpack.config.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jscomplete/learn-fullstack-javascript.git"
+    "url": "git+https://github.com/Darcmarc78/learn-fullstack-javascript.git"
   },
   "author": "",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/jscomplete/learn-fullstack-javascript/issues"
+    "url": "https://github.com/Darcmarc78/learn-fullstack-javascript/issues"
   },
-  "homepage": "https://github.com/jscomplete/learn-fullstack-javascript#readme",
+  "homepage": "https://github.com/Darcmarc78/learn-fullstack-javascript#readme",
   "dependencies": {
     "axios": "^0.18.0",
     "ejs": "^2.6.1",
